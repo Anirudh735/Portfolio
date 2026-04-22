@@ -169,3 +169,65 @@ footer{
   text-decoration:none;
   color:white;
 }
+
+
+
+/* --- RESPONSIVE STYLES --- */
+
+@media (max-width: 1024px) {
+  .skills-container, .project-grid, .cert-grid {
+    grid-template-columns: repeat(2, 1fr); /* 2 columns for tablets */
+  }
+}
+
+@media (max-width: 768px) {
+  /* Navbar adjustments */
+  .navbar {
+    padding: 15px 20px;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+  }
+
+  .navbar ul {
+    padding: 0;
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  /* Container width for mobile */
+  .container {
+    width: 90%;
+    padding: 20px 0;
+  }
+
+  /* Hero adjustments */
+  .hero h1 {
+    font-size: 36px;
+  }
+
+  /* Stack all grids into 1 column */
+  .skills-container, .project-grid, .cert-grid {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+
+  /* About Me text scaling */
+  #about h3 {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+}
+
+/* Specific fix for very small devices */
+@media (max-width: 480px) {
+  .navbar ul {
+    gap: 10px;
+    font-size: 14px;
+  }
+
+  .hero h1 {
+    font-size: 28px;
+  }
+}
