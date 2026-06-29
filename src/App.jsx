@@ -27,7 +27,7 @@ function App() {
           <h1>Anirudh P</h1>
           <p>AI/ML Developer | Computer Vision Enthusiast | Python Developer</p>
 
-          <a href="/resume.pdf" className="resume-btn">
+          <a href="public/Anirudh_P_AI__1_.pdf" className="resume-btn">
             Download Resume
           </a>
         </header>
